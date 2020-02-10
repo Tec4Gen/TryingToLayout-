@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/Normalize.css"> -->
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__top">
+						<div class="header__logo">
+							<a href="#" class="logo">
+								<img src="css/img/logo/main.png" alt="" class="logo__pic">
+							</a>	
+						</div>
+						<div class="header__search">
+							<div class="search">
+								<form class="search__form">
+									<input type="text" placeholder="Поиск" name="" class="search__input">
+									<input type="submit" name="" value="" class="search__submit">
+								</form>
+							</div>
+						</div>
+						<div class="header__menu">
+							<ul class="menu">
+								<li class="menu__item">
+									<a href="" class="menu__link" href="">
+										<span class="menu__link-text">Карта проезда</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link" href="">
+										<span class="menu__link-text">История заказов</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link menu__link_iconed">
+										<span class="menu__link-icon" >
+											<img src="css/img/button-basket__icon.png" alt="placeholder+image" class="menu__link-pic">
+										</span>
+										<span class="menu__link-text">Корзина</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon">
+											<svg 
+											 xmlns="http://www.w3.org/2000/svg"
+											 xmlns:xlink="http://www.w3.org/1999/xlink"
+											 width="20px" height="30px">
+											<image  x="0px" y="0px" width="20px" height="30px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAC+CAQAAABTsh+gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBxAOLw5BB3BjAAABzklEQVR42u3XzW6DMBCF0eMo7//KdJGfphKpsilG9XcXMHgFR8NgxuaeZ7FQxv20rQrwAnFZnIDthrB8xrZ2H6BOwBkQxmNGr4swXo6LIoydajmEk2QuwrZTLYfwePjJn+nrZITpAMzvhFMkBCEgBLwbjNM3sn+YnUFcJwgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQEAJCANfd1W32bR2bOkEICAEh4N1gPC7jWU0cxjM7YbwQ+FEvgzA+WPn3CCdKCEJACAgBXKbN5O2DlWMyZnbC9svVoZm7YzzJL3szwQ1h4ob1BBmPTliXYfD9OqzJcH/qLxOyFoZk8VWKAAAAAElFTkSuQmCC" />
+											</svg>
+										</span>
+										<span class="nav__titel">Планшеты</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon"><svg 
+											 xmlns="http://www.w3.org/2000/svg"
+											 xmlns:xlink="http://www.w3.org/1999/xlink"
+											 width="15px" height="30px">
+											<image  x="0px" y="0px" width="15px" height="30px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAACvCAQAAAAm9VquAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBxAOMi/yAgwhAAABU0lEQVR42u3dSw6CQBAAUZt4/yuPCzX8VbAndCVVO5kEnw1RV0y0224fljoWuwsbnmuIX9FLahXmBnZKrcVccYfi0IlrWB4oWJtTAQ1Td9naSK1fe1Krz/TVPek88XE1ZRiUG4BFjQa5U1FTlSqVEoi6/LWKU2fp1eyLFDRVqVIpSZVKSapUSlKlUpIqlZJUqZSkSqUkVSolqVIpSZVKSapUSlKlUpIqlZJUqZSkSqUkVSolqVIpSZVKSapUSlKlUpIqlZJUqZSkSqUkVSolqVIpSZVKSapUSlKlUpIqlZJUqZSkSqUkVSolqVIpgajLh0UXfs49eKr/Nz7EO/kK5VJj9SqRm3kDxI/HLqfGweMXUrs3JH3qOLl24B1QU8UEo9baeWG7wE01Y67t5NpvxUhF9Kb2m2vSTKdT7YNNg/bYjTHzT+Dubox5b5HR6ioHZ+fQB5zQJVoffDtcAAAAAElFTkSuQmCC" />
+											</svg></span>
+										<span class="nav__titel">Мобильные устройства</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon">
+											<svg 
+												 xmlns="http://www.w3.org/2000/svg"
+												 xmlns:xlink="http://www.w3.org/1999/xlink"
+												 width="40px" height="30px">
+												<image  x="0px" y="0px" width="40px" height="30px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADICAQAAAB8daTZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBxAONDLHXsd+AAACjElEQVR42u3dy27CMBRAwRjx/7+cLkof0LRVRVLw6MzOLJDR0Y29iRjrcuVmmQmNq8V70dJaLplPl2V5NZeip8+LUNZleQ1cXtX68YgOqsC4sfaApjXBuALjzpufjj9+S57DxnHbBOMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC4AuMKjCswrsC40zIevYUcqQnGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYFyBcQXGFRhXYNx589P10dvKXppgXIFxBcYVGFdgXIFxBcYVGFdgXIFxBcYVGFdgXIFxBcYVGFdgXIFxBcYVGFdgXIFxBbaNAuNOy9LfU8qaYNl4C9wMi8ayfExwiTWXouPmPbNeO5vf1bAOsOg9P4l7knXJwhUYV2CcF/i+SwV3JfEC50qBcQXGFRinBb7/koRds7TAuVFgXIFxVuB9zk/qFLYC54sC4wqMKzBOCrzf5Qi6ZkmBs6HAuALjnMD7npvMKewEziYl8P4Th8ywEjjfMAIfM23EDAuBjwsBJJ4/8LERpk88e+DjA0yeeOa3C/9z69O+dThn4EdtesLM8wR+to1OEnv2Mzi/mCfwc03Mc+3mBy9sbi1zyoan+wAAAABJRU5ErkJggg==" />
+											</svg>
+										</span>
+										<span class="nav__titel">Персональные компьютеры</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon">
+											<svg 
+												 xmlns="http://www.w3.org/2000/svg"
+												 xmlns:xlink="http://www.w3.org/1999/xlink"
+												 width="45px" height="25px">
+												<image  x="0px" y="0px" width="45px" height="25px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACgCAQAAAACuKlaAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBxAONiOf2IUOAAAB/klEQVR42u3YQWrDMBRAQcn0/ld2V4WkIU3QCxi7M3sbgR9fsuY+ovwCDjfj46EB+VzLckqrEQnompZC2o5eNee3FpE5dFVLX9YkIhMR2UpENrMrW/i6JhGZiMi+PvSeeOfJQT5yNDGJyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGQiIhMRmYjIREQmIjIRkYmITERkIiITEZmIyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGQiIhMRmYjIREQmIjIRkYmITERkIiITEZmIyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGQiIhMRmYjIREQmIjIRkYmITERkIiITEZmIyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGQiIhMRmYjIREQmIjIRkYmITERkIiITEZmIyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGQiIhMRmYjIREQmIjIRkYmITERkIiITEZmIyEREJiIyEZGJiExEZCIiExGZiMhERCYiMhGRiYhMRGRz349eAmdnEpGJiExEZCIiExGZiMi2MY9eAic3tzFkRDB/tjMZsWaOMca8ubB2d837bgbPfChHSvztYd+aT5sRE/eeHnrmy1bE9L+9cV5+HdFvorq2hZ+sb5ajGDI/gkhdAAAAAElFTkSuQmCC" />
+											</svg>
+										</span>
+										<span class="nav__titel">Ноутбуки</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon">
+											<svg 
+												 xmlns="http://www.w3.org/2000/svg"
+												 xmlns:xlink="http://www.w3.org/1999/xlink"
+												 width="30px" height="25px">
+												<image  x="0px" y="0px" width="30px" height="25px"  xlink:href="data:img/png;base64,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" />
+											</svg>
+										</span>
+										<span class="nav__titel">Аксессуары</span>
+									</a>
+								</li>		
+								<li class="nav__item">
+									<a class="nav__link" href="">
+										<span class="nav__icon">
+											<svg 
+												 xmlns="http://www.w3.org/2000/svg"
+												 xmlns:xlink="http://www.w3.org/1999/xlink"
+												 width="25px" height="30px">
+												<image  x="0px" y="0px" width="25px" height="30px"  xlink:href="data:img/png;base64,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" />
+											</svg>
+										</span>
+										<span class="nav__titel">Бытовая техника</span>
+									</a>
+								</li>	
+
+							</ul>
+						</nav>
+
+				</div>
+			</header>
+			<section class="bradcrumbs">
+				<div class="container">
+					<ul class="bradcrumbs__list">
+						<li class="bradcrumbs__item">
+							<a class="bradcrumbs__link" href="#">
+								Главная
+							</a>
+						</li>
+						<li class="bradcrumbs__item">
+							<a class="bradcrumbs__link" href="#">
+								Мобильные устройства
+							</a>
+						</li>							
+					</ul>
+				</div>
+			</section>
+			<setction class="title">
+				<div class="container">
+					<h1 class="titel">
+						Мобильные устройства
+					</h1>
+				</div>
+			</setction>
+			<section class="content__wrapper">
+				<div class="container">
+					<aside class="sidebar">
+						<ul class="categories">
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+
+									<span class="categories__icon">
+										<img src="css/img/phone_or.png" alt="">
+									</span>
+									<span class="cotegories__text">
+										Мобильные устройства
+									</span>
+								</a>
+								<div class="cotigories__amout">
+									85
+								</div>
+							</li>
+							<li class="categories__item">
+									<a href="#" class="categories__link">
+
+										<span class="categories__icon">
+											<img src="css/img/big_phone_or.png" alt="">
+										</span>
+										<span class="cotegories__text">
+											Мобильные устройства
+										</span>
+	
+									</a>
+									<div class="cotigories__amout">
+										85
+									</div>
+								</li>
+								<li class="categories__item">
+										<a href="#" class="categories__link">
+											<span class="categories__icon">
+												<img src="css/img/123.png" alt="">
+											</span>
+											<span class="cotegories__text">
+												Мобильные устройства
+											</span>
+		
+										</a>
+										<div class="cotigories__amout">
+											85
+										</div>
+								</li>
+								
+						</ul>
+					</aside>
+					<main class="content">
+						<ul class="products">
+							<li class="products__item">
+								<div class="products__slideshow">
+									<div class="slideshow">
+										<div class="slideshow__display">
+											<img src="css/img/phone.png" alt="" class="slideshow__display-img">
+										</div>
+										<ul class="slideshow__thumbs">
+											<li class="slideshow__thumbs-item">
+												<a href="#" class="slideshow__thumbs-link">
+													<img src="css/img/1.png" alt="">
+												</a>
+											</li>
+											<li class="slideshow__thumbs-item">
+												<a href="#" class="slideshow__thumbs-link">
+													<img src="css/img/2.png" alt="">
+												</a>
+											</li>
+											<li class="slideshow__thumbs-item">
+												<a href="#" class="slideshow__thumbs-link">
+													<img src="css/img/3.png" alt="">
+												</a>
+											</li>
+											<li class="slideshow__thumbs-item">
+												<a href="#" class="slideshow__thumbs-link">
+													<img src="css/img/4.png" alt="">
+												</a>
+											</li>	
+										</ul>
+										
+									</div>
+								</div>
+								<div class="products__desc">
+									<h2 class="products__title">
+											Apple iPhone 6s Plus 128GB
+									</h2>
+									<div class="products__desk-content">
+										<ul>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+											<li>Диагональ дисплея (дюйм): 5.5</li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="products__price">
+									<div class="products__price-inner">
+										<div class="products__price-amount">
+											76 990 рублей
+										</div>
+										<a href="#" class="products__buy">
+											Купить
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products__item">
+									<div class="products__slideshow">
+										<div class="slideshow">
+											<div class="slideshow__display">
+												<img src="css/img/phone.png" alt="" class="slideshow__display-img">
+											</div>
+											<ul class="slideshow__thumbs">
+												<li class="slideshow__thumbs-item">
+													<a href="#" class="slideshow__thumbs-link">
+														<img src="css/img/1.png" alt="">
+													</a>
+												</li>
+												<li class="slideshow__thumbs-item">
+													<a href="#" class="slideshow__thumbs-link">
+														<img src="css/img/2.png" alt="">
+													</a>
+												</li>
+												<li class="slideshow__thumbs-item">
+													<a href="#" class="slideshow__thumbs-link">
+														<img src="css/img/3.png" alt="">
+													</a>
+												</li>
+												<li class="slideshow__thumbs-item">
+													<a href="#" class="slideshow__thumbs-link">
+														<img src="css/img/4.png" alt="">
+													</a>
+												</li>	
+											</ul>
+											
+										</div>
+									</div>
+									<div class="products__desc">
+										<h2 class="products__title">
+												Apple iPhone 6s Plus 128GB
+										</h2>
+										<div class="products__desk-content">
+											<ul>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+												<li>Диагональ дисплея (дюйм): 5.5</li>
+	
+											</ul>
+										</div>
+									</div>
+									<div class="products__price">
+										<div class="products__price-inner">
+											<div class="products__price-amount">
+												76 990 рублей
+											</div>
+											<a href="#" class="products__buy">
+												Купить
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="products__item">
+										<div class="products__slideshow">
+											<div class="slideshow">
+												<div class="slideshow__display">
+													<img src="css/img/phone.png" alt="" class="slideshow__display-img">
+												</div>
+												<ul class="slideshow__thumbs">
+													<li class="slideshow__thumbs-item">
+														<a href="#" class="slideshow__thumbs-link">
+															<img src="css/img/1.png" alt="">
+														</a>
+													</li>
+													<li class="slideshow__thumbs-item">
+														<a href="#" class="slideshow__thumbs-link">
+															<img src="css/img/2.png" alt="">
+														</a>
+													</li>
+													<li class="slideshow__thumbs-item">
+														<a href="#" class="slideshow__thumbs-link">
+															<img src="css/img/3.png" alt="">
+														</a>
+													</li>
+													<li class="slideshow__thumbs-item">
+														<a href="#" class="slideshow__thumbs-link">
+															<img src="css/img/4.png" alt="">
+														</a>
+													</li>	
+												</ul>
+												
+											</div>
+										</div>
+										<div class="products__desc">
+											<h2 class="products__title">
+													Apple iPhone 6s Plus 128GB
+											</h2>
+											<div class="products__desk-content">
+												<ul>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+													<li>Диагональ дисплея (дюйм): 5.5</li>
+		
+												</ul>
+											</div>
+										</div>
+										<div class="products__price">
+											<div class="products__price-inner">
+												<div class="products__price-amount">
+													76 990 рублей
+												</div>
+												<a href="#" class="products__buy">
+													Купить
+												</a>
+											</div>
+										</div>
+									</li>
+						</ul>
+					</main>
+				</div>
+			</section>
+			<section class="pagination">
+				<div class="container">
+					<a href="#" class="pagination__control pagination__controll_left">
+
+					</a>
+					<ul class="pagination__list">
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">1</a>
+						</li>
+						<li class="pagination__item">
+								<a href="#" class="pagination__link">2</a>
+						</li>
+						<li class="pagination__item">
+									<a href="#" class="pagination__link">3</a>
+						</li>
+						<li class="pagination__item">
+								<a href="#" class="pagination__link">4</a>
+						</li>
+						<li class="pagination__item">
+									<a href="#" class="pagination__link">5</a>
+						</li>
+						<li class="pagination__item">
+										<a href="#" class="pagination__link">6</a>
+						</li>
+						<li class="pagination__item">
+								<a href="#" class="pagination__link">7</a>
+						</li>
+					</ul>
+					<a href="#" class="pagination__control pagination__controll_right">
+
+					</a>
+				</div>
+			</section>
+			<div class="empty"></div>
+		</div>
+		<div class="container">
+			<footer class="footer">
+				<div class="footer__adress">
+					г. Санкт-Петербург, Левашовский проспект, БЦ «Квартал»</div>
+				<div class="footer__copyright">
+					© mojn.ru 2016
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
